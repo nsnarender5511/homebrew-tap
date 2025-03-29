@@ -11,7 +11,7 @@ class Crules < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_darwin_amd64.tar.gz"
-      sha256 "7144162d4e5da5b55765c017f17e79771d1a552d4ece36aa6516caf5a318298c"
+      sha256 "3800181d452385bfb02a8110e59abb1412c84c61cea79e26ccd1d8b7278d077c"
 
       def install
         bin.install "crules"
@@ -19,7 +19,7 @@ class Crules < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_darwin_arm64.tar.gz"
-      sha256 "7e6cf114d92175f7012a45164b7a4fef5baa51780e4c8c113e81c502bbd24826"
+      sha256 "3fc3752aeaa036beb332f0291b4c9ff7ef296273095636bf952f1fff98f96ae7"
 
       def install
         bin.install "crules"
@@ -31,7 +31,7 @@ class Crules < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_linux_amd64.tar.gz"
-        sha256 "82379b089fdcd831e7c033b002d91d71790c028990ed3e7f7b1f072b6bc21131"
+        sha256 "2ce718b582aba4651e8c1a64ea425d3558db4f31f45172cae2bfb20a2ce823ea"
 
         def install
           bin.install "crules"
@@ -41,7 +41,7 @@ class Crules < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_linux_arm64.tar.gz"
-        sha256 "a91751cee3fdafb23c5ecff60031196e2344209fa2b7fe5125f51d7c207e1d3d"
+        sha256 "5633224c5430da32b1a6a6c24b309726ca6196e27cb4b3abcfae5ab33e4409f9"
 
         def install
           bin.install "crules"
