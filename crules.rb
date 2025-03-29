@@ -5,21 +5,21 @@
 class Crules < Formula
   desc "A tool for managing and synchronizing Cursor rules across multiple projects"
   homepage "https://github.com/nsnarender5511/crules"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_darwin_amd64.tar.gz"
-      sha256 "3800181d452385bfb02a8110e59abb1412c84c61cea79e26ccd1d8b7278d077c"
+      url "https://github.com/nsnarender5511/crules/releases/download/v0.0.2/crules_darwin_amd64.tar.gz"
+      sha256 "09b693875f7f847c32d531583b39bea8c9cd1a38edd18f785791b3fe2ae947a2"
 
       def install
         bin.install "crules"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_darwin_arm64.tar.gz"
-      sha256 "3fc3752aeaa036beb332f0291b4c9ff7ef296273095636bf952f1fff98f96ae7"
+      url "https://github.com/nsnarender5511/crules/releases/download/v0.0.2/crules_darwin_arm64.tar.gz"
+      sha256 "1b8b085401d259b661c90854684831a295debbf417557aa9fcebcc4dd9304e44"
 
       def install
         bin.install "crules"
@@ -30,8 +30,8 @@ class Crules < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_linux_amd64.tar.gz"
-        sha256 "2ce718b582aba4651e8c1a64ea425d3558db4f31f45172cae2bfb20a2ce823ea"
+        url "https://github.com/nsnarender5511/crules/releases/download/v0.0.2/crules_linux_amd64.tar.gz"
+        sha256 "86c94e5f7402cc46dff41ecff77ec7b7c0ad145b799b569e8d8764a5ac71370d"
 
         def install
           bin.install "crules"
@@ -40,8 +40,8 @@ class Crules < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nsnarender5511/crules/releases/download/v0.0.1/crules_linux_arm64.tar.gz"
-        sha256 "5633224c5430da32b1a6a6c24b309726ca6196e27cb4b3abcfae5ab33e4409f9"
+        url "https://github.com/nsnarender5511/crules/releases/download/v0.0.2/crules_linux_arm64.tar.gz"
+        sha256 "0dc22c63e9f9b7316a644c00cc7ce9df3f8f7710e76012a025b2e07bffbf0c60"
 
         def install
           bin.install "crules"
